@@ -29,7 +29,14 @@ void AWizardBase::SetupPlayerInputComponent(UInputComponent* PlayerInputComponen
 
 }
 
-TArray<float> AWizardBase::RunInference(TArray<float> points){
+// int ITargetable::GetWeight()
+// {
+// 	return 0;
+// }
+
+
+TArray<float> AWizardBase::RunInference(TArray<float> points)
+{
 	// int j = 0;
 	TArray<float> result;
 	TWeakInterfacePtr<INNERuntimeCPU> Runtime = UE::NNE::GetRuntime<INNERuntimeCPU>(FString("NNERuntimeORTCpu"));

@@ -7,11 +7,13 @@
 #include "NNE.h"
 #include "NNERuntimeCPU.h"
 #include "NNEModelData.h"
+#include "Targetable.h"
 #include "WizardBase.generated.h"
 
 
+// UCLASS(Blueprintable, Category="MyGame")
 UCLASS()
-class BATTLEWIZARD_API AWizardBase : public ACharacter
+class BATTLEWIZARD_API AWizardBase : public ACharacter, public ITargetable
 {
 	GENERATED_BODY()
 
@@ -32,6 +34,8 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "mycategory") 
 	TArray<float> RunInference(TArray<float> points);
+
+    // virtual int GetWeight_Implementation() override;
 
 public:
 	UPROPERTY(EditAnywhere)
