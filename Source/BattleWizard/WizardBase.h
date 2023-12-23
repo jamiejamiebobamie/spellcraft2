@@ -8,12 +8,13 @@
 #include "NNERuntimeCPU.h"
 #include "NNEModelData.h"
 #include "Targetable.h"
+#include "Lineable.h"
 #include "WizardBase.generated.h"
 
 
 // UCLASS(Blueprintable, Category="MyGame")
 UCLASS()
-class BATTLEWIZARD_API AWizardBase : public ACharacter, public ITargetable
+class BATTLEWIZARD_API AWizardBase : public ACharacter, public ITargetable, public ILineable
 {
 	GENERATED_BODY()
 
