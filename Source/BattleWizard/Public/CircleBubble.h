@@ -5,12 +5,13 @@
 #include "CoreMinimal.h"
 #include "Targetable.h"
 #include "Lineable.h"
+#include "Circleable.h"
 #include "Damageable.h"
 #include "GameFramework/Actor.h"
 #include "CircleBubble.generated.h"
 
 UCLASS(Blueprintable, BlueprintType)
-class BATTLEWIZARD_API ACircleBubble : public AActor, public ITargetable, public ILineable, public IDamageable
+class BATTLEWIZARD_API ACircleBubble : public AActor, public ITargetable, public ILineable, public IDamageable, public ICircleable
 {
 	GENERATED_BODY()
 	
@@ -25,5 +26,9 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+public:
+UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Circleable")
+TArray<ICircleable*> Circleables;
 	
 };
