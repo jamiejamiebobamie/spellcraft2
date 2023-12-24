@@ -9,12 +9,14 @@
 #include "NNEModelData.h"
 #include "Targetable.h"
 #include "Lineable.h"
+#include "Circleable.h"
+#include "Damageable.h"
 #include "WizardBase.generated.h"
 
 
 // UCLASS(Blueprintable, Category="MyGame")
 UCLASS()
-class BATTLEWIZARD_API AWizardBase : public ACharacter, public ITargetable, public ILineable
+class BATTLEWIZARD_API AWizardBase : public ACharacter, public ITargetable, public ILineable, public ICircleable, public IDamageable
 {
 	GENERATED_BODY()
 

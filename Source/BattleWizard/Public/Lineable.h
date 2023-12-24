@@ -22,8 +22,8 @@ class BATTLEWIZARD_API ILineable
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
-UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="FreeCasting")
+UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Lineable")
 FVector GetLocation();
-UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="FreeCasting")
+UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Lineable")
 bool ApplyImpulse(FVector Impulse);
 };

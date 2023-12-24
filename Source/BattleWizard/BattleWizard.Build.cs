@@ -8,7 +8,7 @@ public class BattleWizard : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "NNE" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "NNE", "Niagara" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
