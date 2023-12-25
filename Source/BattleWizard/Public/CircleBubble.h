@@ -28,7 +28,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 public:
-UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Circleable")
-TArray<ICircleable*> Circleables;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Circleable")
+	TArray<ICircleable*> Circleables;
 	
 };
