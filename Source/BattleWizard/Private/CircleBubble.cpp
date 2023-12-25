@@ -8,6 +8,19 @@ ACircleBubble::ACircleBubble()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+        // Sphere = NewObject<USphereComponent>(this, USphereComponent::StaticClass());
+
+
+        Sphere = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere"));
+
+        // Sphere->RegisterComponent();
+	    // Sphere = NewObject<USphereComponent>(USphereComponent::StaticClass(), "Sphere"); // compiles
+        // Sphere = NewObject<USphereComponent>(SphereComponent, USphereComponent::StaticClass());
+        //dynamicallyCreatedSphere->SetupAttachment(SphereComponent);
+        Sphere->InitSphereRadius(32.0f);
+        Sphere->SetVisibility(true);
+        Sphere->SetHiddenInGame(false);
+        // Sphere->RegisterComponent();
 
 }
 

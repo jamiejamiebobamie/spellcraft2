@@ -7,6 +7,7 @@
 #include "Lineable.h"
 #include "Circleable.h"
 #include "Damageable.h"
+#include "Components/SphereComponent.h"
 #include "GameFramework/Actor.h"
 #include "CircleBubble.generated.h"
 
@@ -26,9 +27,14 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	// UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Circleable")
+	UFUNCTION(BlueprintCallable, BlueprintImplementableEvent, Category="Circleable")
+	void SetBubbleLifespan(float seconds);
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Circleable")
 	TArray<ICircleable*> Circleables;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Circleable")
+	USphereComponent* Sphere;
 	
 };

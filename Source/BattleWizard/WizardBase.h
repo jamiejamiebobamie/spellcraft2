@@ -11,12 +11,13 @@
 #include "Lineable.h"
 #include "Circleable.h"
 #include "Damageable.h"
+#include "Diamondable.h"
 #include "WizardBase.generated.h"
 
 
 // UCLASS(Blueprintable, Category="MyGame")
 UCLASS()
-class BATTLEWIZARD_API AWizardBase : public ACharacter, public ITargetable, public ILineable, public ICircleable, public IDamageable
+class BATTLEWIZARD_API AWizardBase : public ACharacter, public ITargetable, public ILineable, public ICircleable, public IDamageable, public IDiamondable
 {
 	GENERATED_BODY()
 

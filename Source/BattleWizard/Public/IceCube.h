@@ -10,7 +10,7 @@
 #include "IceCube.generated.h"
 
 UCLASS()
-class BATTLEWIZARD_API AIceCube : public AActor, public ITargetable, public ICircleable, public IDamageable
+class BATTLEWIZARD_API AIceCube : public AActor, public ITargetable, public IDamageable
 {
 	GENERATED_BODY()
 	
