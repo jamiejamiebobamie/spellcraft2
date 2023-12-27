@@ -6,11 +6,12 @@
 #include "Targetable.h"
 #include "Circleable.h"
 #include "Damageable.h"
+#include "Doorable.h"
 #include "GameFramework/Actor.h"
 #include "IceCube.generated.h"
 
 UCLASS()
-class BATTLEWIZARD_API AIceCube : public AActor, public ITargetable, public IDamageable
+class BATTLEWIZARD_API AIceCube : public AActor, public ITargetable, public IDamageable, public IDoorable
 {
 	GENERATED_BODY()
 	
