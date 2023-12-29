@@ -3,11 +3,12 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Doorable.h"
 #include "GameFramework/Actor.h"
 #include "Floor.generated.h"
 
 UCLASS()
-class BATTLEWIZARD_API AFloor : public AActor
+class BATTLEWIZARD_API AFloor : public AActor,  public IDoorable
 {
 	GENERATED_BODY()
 	

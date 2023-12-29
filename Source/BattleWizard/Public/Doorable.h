@@ -22,4 +22,14 @@ class BATTLEWIZARD_API IDoorable
 
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
+UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Doorable")
+FVector GetDoorableBounds();
+UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Doorable")
+FVector GetDoorableWorldLocation();
+UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Doorable")
+FRotator GetDoorableWorldRotation();
+UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Doorable")
+void SetDoorableWorldLocation(FVector OptionalLocation);
+UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Doorable")
+void SetDoorableWorldBounds(FVector OptionalBounds);
 };
