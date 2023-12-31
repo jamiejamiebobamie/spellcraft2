@@ -29,7 +29,7 @@ ACircleBubble* GetIsCircled();
 UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Circleable")
 FVector GetLocation();
 UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Circleable")
-bool ApplyForce();
+bool ApplyForce(FVector OptionalForce);
 UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Circleable")
 bool GetIsValid();
 };

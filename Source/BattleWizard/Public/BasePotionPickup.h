@@ -7,10 +7,11 @@
 #include "Targetable.h"
 #include "Lineable.h"
 #include "Circleable.h"
+#include "Damageable.h"
 #include "BasePotionPickup.generated.h"
 
 UCLASS(Blueprintable, BlueprintType)
-class BATTLEWIZARD_API ABasePotionPickup : public AActor, public ITargetable, public ILineable, public ICircleable
+class BATTLEWIZARD_API ABasePotionPickup : public AActor, public ITargetable, public ILineable, public ICircleable, public IDamageable
 {
 	GENERATED_BODY()
 
