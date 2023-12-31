@@ -24,7 +24,9 @@ class BATTLEWIZARD_API ITargetable
 	public:
 	/**Get weight of Targetable to determine weighted average of TargetTracker location. */
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Targetable")
-	int GetWeight(AActor* Caller);
+	int GetWeight(AWizardBase* Caller);
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Targetable")
+	AActor* GetSelf();
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Targetable")
 	FVector GetTargetLocation();
 };
