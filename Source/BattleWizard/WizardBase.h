@@ -41,6 +41,8 @@ public:
 
     // virtual int GetWeight_Implementation() override;
 
+	// comment added for branch change test
+
 public:
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<UNNEModelData> PreLoadedModelData;
