@@ -46,4 +46,20 @@ public:
 public:
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<UNNEModelData> PreLoadedModelData;
+	UPROPERTY(BlueprintReadOnly)
+	TArray<int32> NPC_Circle_X;
+	UPROPERTY(BlueprintReadOnly)
+	TArray<int32> NPC_Circle_Y;
+	UPROPERTY(BlueprintReadOnly)
+	TArray<int32> NPC_Line_X;
+	UPROPERTY(BlueprintReadOnly)
+	TArray<int32> NPC_Line_Y;
+	UPROPERTY(BlueprintReadOnly)
+	TArray<int32> NPC_Diamond_X;
+	UPROPERTY(BlueprintReadOnly)
+	TArray<int32> NPC_Diamond_Y;
+	UPROPERTY(BlueprintReadOnly)
+	TArray<int32> NPC_Star_X;
+	UPROPERTY(BlueprintReadOnly)
+	TArray<int32> NPC_Star_Y;
 };
