@@ -25,7 +25,7 @@ class BATTLEWIZARD_API IDamageable
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Damageable")
-bool Damage(float dmgAmt);
+bool Damage(float dmgAmt, AActor* damager, bool isMagicDmg, FVector impulse);
 UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Damageable")
 float GetHealth();
 UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category="Damageable")
